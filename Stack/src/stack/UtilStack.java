@@ -10,14 +10,14 @@ import java.util.Vector;
  */
 
 // Util 클래스 Stack 변형 (Vector 이용)
-public class utilStack<E> {
+public class UtilStack<E> {
 
     private Vector<E> stack;
 
     /**
      * Creates an empty Stack.
      */
-    public utilStack(){ stack = new Vector<>(); }
+    public UtilStack(){ stack = new Vector<>(); }
 
     /**
      * 스택의 최상단에 데이터를 넣는다.
