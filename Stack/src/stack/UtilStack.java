@@ -64,9 +64,9 @@ public class UtilStack<E> {
     }
 
     /**
-     * 스택이 비어있는지 아닌 지 테스트
+     * 스택이 비어있는지 아닌 지 확인
      *
-     * @return
+     * @return 비어있다면 true, 비어있지 않다면 false
      */
     public boolean empty(){
         return stack.size() == 0;
