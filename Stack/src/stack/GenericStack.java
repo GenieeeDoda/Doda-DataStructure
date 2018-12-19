@@ -65,7 +65,7 @@ public class GenericStack<E> {
     }
 
     /**
-     * 아이템의 인덱스를 리턴. Vector의 #lastIndexOf 구현 참고.
+     * 아이템의 인덱스를 리턴. Vector의 #lastIndexOf 구현 참고. 1부터 시작이다.
      * @param item
      * @return 아이템이 있다면 인덱스, 아이템이 없다면 -1
      */
@@ -73,13 +73,13 @@ public class GenericStack<E> {
         if ( item == null ){
             for(int i = this.top ; i >= 0; i--){
                 if(elements[i] == null){
-                    return i;
+                    return this.top - i + 1; // 1부터 시작이기 때문에
                 }
             }
         }else{
             for(int i = this.top; i >= 0; i--) {
                 if(item.equals(elements[i])){
-                    return i;
+                    return this.top - i + 1; // 1부터 시작이기 때문에
                 }
             }
         }
