@@ -13,22 +13,17 @@ import static org.junit.Assert.*;
 public class UtilStackTest {
 
     @Test
-    public void push() {
+    public void test() {
+        UtilStack<Integer> us = new UtilStack<>();
+
+        us.push(1);
+        us.push(2);
+        System.out.println(us.peek());
+        us.pop();
+        us.push(3);
+        us.push(4);
+        System.out.println(us.search(2));
+        System.out.println(us.search(4));
     }
 
-    @Test
-    public void pop() {
-    }
-
-    @Test
-    public void peek() {
-    }
-
-    @Test
-    public void empty() {
-    }
-
-    @Test
-    public void search() {
-    }
 }
