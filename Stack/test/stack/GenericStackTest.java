@@ -13,22 +13,17 @@ import static org.junit.Assert.*;
 public class GenericStackTest {
 
     @Test
-    public void push() {
-    }
+    public void test() {
+        GenericStack<Integer> gs = new GenericStack<>(5);
 
-    @Test
-    public void pop() {
-    }
+        gs.push(1);
+        gs.push(2);
+        System.out.println(gs.peek());
+        gs.pop();
+        gs.push(3);
+        gs.push(4);
+        System.out.println(gs.search(2));
+        System.out.println(gs.search(4));
 
-    @Test
-    public void isEmpty() {
-    }
-
-    @Test
-    public void peek() {
-    }
-
-    @Test
-    public void search() {
     }
 }
