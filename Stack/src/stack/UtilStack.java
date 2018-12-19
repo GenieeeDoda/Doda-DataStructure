@@ -60,7 +60,7 @@ public class UtilStack<E> {
         if (len == 0){
             throw new EmptyStackException();
         }
-        return stack.elementAt(len);
+        return stack.elementAt(len - 1);
     }
 
     /**
